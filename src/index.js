@@ -7,7 +7,7 @@ import routes from './modules/core/routes';
 import dbConnect from './modules/core/db';
 
 const app = express(); // calls the function express() that create a new app and assigns the result to the const app
-const PORT = process.env.PORT || 5000; // use this port #5000 to start a server
+let PORT = process.env.PORT || 5000; // use this port #5000 to start a server
 
 dbConnect();
 logger(app);
