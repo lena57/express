@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-//const { Schema } = mongoose; //the same as line #4
+// const { Schema } = mongoose; //the same as line #4
 const Schema = mongoose.Schema;
 const userSchema = new Schema({
   email: {
