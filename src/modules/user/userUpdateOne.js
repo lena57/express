@@ -3,6 +3,7 @@ import User from './Model';
 export default function userUpdateOne(req, res) {
   const { userId } = req.params;
   delete req.body.password;
+  console.log('===============================');
   console.log(req.body);
   User.updateOne({ _id: userId }, req.body)
     .exec()
