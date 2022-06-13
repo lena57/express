@@ -5,7 +5,7 @@ export default function userGetById(req, res) {
   console.log('===============================');
   User.findById(userId)
     .exec()
-    .then(result => {
+    .then((result) => {
       res.status(200).json(result);
     })
     .catch((err) => {
